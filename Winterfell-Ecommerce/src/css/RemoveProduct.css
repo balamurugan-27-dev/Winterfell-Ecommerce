@@ -1,0 +1,151 @@
+
+.remove-product {
+  width: 100%;
+}
+
+.remove-product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.remove-product-header h2 {
+  color: #172940;
+  font-size: 25px;
+  margin: 0;
+}
+
+.remove-product-header p {
+  color: #888;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.product-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #172940;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.remove-table-wrapper {
+  background: white;
+  border-radius: 10px;
+  overflow-x: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.remove-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.remove-table th {
+  background: #172940;
+  color: white;
+  padding: 18px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.remove-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #eee;
+  color: #172940;
+  font-size: 14px;
+}
+
+.remove-product-details {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.remove-product-details img {
+  width: 55px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #F5F2E8;
+}
+
+.remove-product-details span {
+  font-weight: 500;
+}
+
+.remove-btn {
+  background: #fff0f0;
+  color: #c0392b;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #c0392b;
+  color: white;
+}
+
+.remove-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.remove-loading,
+.no-products,
+.remove-error {
+  background: white;
+  padding: 45px 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #172940;
+}
+
+.no-products i {
+  font-size: 45px;
+  color: #B88C4F;
+}
+
+.no-products h3 {
+  margin-top: 15px;
+}
+
+.remove-error {
+  color: #c0392b;
+}
+
+.remove-error button {
+  display: block;
+  margin: 15px auto 0;
+  padding: 9px 20px;
+  background: #172940;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .remove-product-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .remove-product-header h2 {
+    font-size: 21px;
+  }
+}
+    

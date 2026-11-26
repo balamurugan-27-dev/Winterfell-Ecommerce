@@ -1,16 +1,35 @@
 :root {
-  --primary-color: rgb(159, 181, 182);
-  --secondary-color: rgb(86, 111, 235);
-  --text-color: rgb(241, 241, 247);
-  --font-size: 20px;
-
-
+    --background-color :#F5F2E8;
+    --primary-color: #172940;
+    --secondary-color: #B88C4F;
+    --text-color: rgb(241, 241, 247);
+    --font-size: 20px;
 }
-* {
+html, body, #root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+      background-color: var(--background-color);
+      scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-}
-.app{
-  background-color:aliceblue;
-  display: block;
+    margin: 0;
+    padding: 0;
 }
 
+.app {
+    min-height: 100vh;
+}
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease,transform 0.7s ease ;
+}
+.reveal.show{
+    opacity: 1;
+    transform: translateY(0px);
+}

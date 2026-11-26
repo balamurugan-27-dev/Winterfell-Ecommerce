@@ -1,0 +1,122 @@
+.register-page {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    min-height: 100vh;
+}
+
+.register-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: clamp(2.25rem, 4vw, 3.125rem);
+    line-height: 1.15;
+}
+
+.register-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 30px;
+    background-color: white;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+.register-brand {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.register-form h1 {
+    margin-top: 4px;
+    font-size: 2rem;
+}
+
+.register-intro {
+    margin-bottom: 14px;
+    color: #5e6570;
+}
+
+.register-form label {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.register-input {
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #e1d8c9;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font: inherit;
+}
+
+.register-input:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 1px;
+}
+
+.register-button {
+    width: 100%;
+    min-height: 42px;
+    margin-top: 14px;
+    border: 0;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.register-button:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+}
+
+.register-button:disabled {
+    cursor: wait;
+    opacity: .7;
+}
+
+.register-error {
+    color: #a32424;
+    font-size: .9rem;
+}
+
+.register-login-link {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.register-login-link a {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .register-page {
+        grid-template-columns: 1fr;
+    }
+
+    .register-message {
+        min-height: 190px;
+        padding: 32px;
+    }
+
+    .register-form-container {
+        align-items: flex-start;
+        padding: 42px 24px;
+    }
+}

@@ -1,0 +1,181 @@
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #F5F2E8;
+}
+
+/* Sidebar */
+
+.admin-sidebar {
+  width: 250px;
+  background: #172940;
+  color: white;
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.admin-brand {
+  padding: 0 12px 35px;
+  border-bottom: 1px solid #39495c;
+}
+
+.admin-brand h2 {
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.admin-brand span {
+  display: block;
+  font-size: 11px;
+  color: #B88C4F;
+  letter-spacing: 3px;
+  margin-top: 7px;
+}
+
+.menu-heading {
+  font-size: 11px;
+  color: #9BA9B8;
+  letter-spacing: 2px;
+  margin: 30px 12px 15px;
+}
+
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.admin-menu-item,
+.admin-logout {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: none;
+  background: transparent;
+  color: #D5DCE5;
+  border-radius: 7px;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-menu-item i,
+.admin-logout i {
+  font-size: 18px;
+}
+
+.admin-menu-item:hover,
+.admin-menu-item.active {
+  background: #B88C4F;
+  color: white;
+}
+
+.admin-logout {
+  margin-top: auto;
+  border-top: 1px solid #39495c;
+  border-radius: 0;
+  padding-top: 25px;
+}
+
+.admin-logout:hover {
+  color: #E5A4A4;
+}
+
+/* Main */
+
+.admin-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-header {
+  background: white;
+  min-height: 90px;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px #1729400d;
+}
+
+.admin-header h3 {
+  color: #172940;
+  margin: 0;
+  font-size: 22px;
+}
+
+.admin-header p {
+  color: #888;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #172940;
+  font-size: 14px;
+}
+
+.admin-profile i {
+  font-size: 27px;
+}
+
+.admin-content {
+  padding: 35px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 75px;
+    padding: 25px 9px;
+  }
+
+  .admin-brand {
+    padding: 0 0 25px;
+    text-align: center;
+  }
+
+  .admin-brand h2 {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+
+  .admin-brand span,
+  .menu-heading,
+  .admin-menu-item span,
+  .admin-logout {
+    display: none;
+  }
+
+  .admin-menu-item {
+    justify-content: center;
+    padding: 15px 5px;
+  }
+
+  .admin-menu-item i {
+    font-size: 20px;
+  }
+
+  .admin-header {
+    padding: 18px;
+  }
+
+  .admin-profile span {
+    display: none;
+  }
+
+  .admin-content {
+    padding: 18px;
+  }
+}
+ 

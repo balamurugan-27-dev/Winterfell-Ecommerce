@@ -1,0 +1,115 @@
+.login-container{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    min-height: 100vh;
+}
+.winterfell-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30PX;
+    background-color: white;
+   
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    gap: 10px;
+    justify-content: center;
+}
+.form-login .button{
+    background-color: var(--primary-color);
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin:0 auto ;
+}
+
+.form-login .input{
+    height: 35px;
+    background-color: beige;
+    border: none;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    .login-container {
+        grid-template-columns: 0.7fr 1.3fr;
+    }
+
+    .winterfell-login {
+        font-size: 38px;
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-login {
+        padding: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .login-container {
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+    }
+
+    .winterfell-login {
+        min-height: 180px;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .form-login {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .form-login .input {
+        height: 42px;
+    }
+
+    .form-login .button {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+    .winterfell-login {
+        font-size: 25px;
+        min-height: 150px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .form-login {
+        padding: 10px;
+    }
+}
